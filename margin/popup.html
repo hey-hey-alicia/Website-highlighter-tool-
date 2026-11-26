@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    body { width: 360px; }
+    header { display: flex; align-items: center; gap: 8px; padding: 12px 14px 10px; border-bottom: 1px solid var(--line); }
+    header h1 { font-size: 14px; margin: 0; flex: 1; }
+    .count { color: var(--muted); font-weight: 400; }
+    #list { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; max-height: 420px; overflow-y: auto; }
+    footer { padding: 8px 14px 12px; color: var(--muted); font-size: 11.5px; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This page <span class="count" id="count"></span></h1>
+    <button class="btn" id="all">All notes →</button>
+  </header>
+  <div id="list"></div>
+  <footer>Select text on any page to highlight it. Click a highlight to edit its note. Stored only in this browser.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>
